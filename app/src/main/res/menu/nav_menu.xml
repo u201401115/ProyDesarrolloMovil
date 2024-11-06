@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_clientes"
+            android:title="Clientes" />
+        <item
+            android:id="@+id/nav_rutas"
+            android:title="Rutas" />
+        <item
+            android:id="@+id/nav_ordenes"
+            android:title="Ordenes" />
+        <item
+            android:id="@+id/nav_mercaderia"
+            android:title="Mercadería" />
+    </group>
+
+    <item android:title="Otras Opciones">
+        <menu>
+            <item
+                android:id="@+id/nav_mis_pedidos"
+                android:title="Mis Pedidos" />
+            <item
+                android:id="@+id/nav_cerrar_sesion"
+                android:title="Cerrar Sesión" />
+        </menu>
+    </item>
+</menu>
