@@ -13,6 +13,39 @@
         android:theme="@style/Theme.AppTracking"
         tools:targetApi="31">
         <activity
+            android:name=".RutaLogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RutaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OrdenDetalleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OrdenListasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OrdenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VehiculoTrackingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PasivoTrackingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PasivoDetalleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PasivosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InfoPedidoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PrincipalActivity"
+            android:exported="false" />
+        <activity
             android:name=".PedidoActivity"
             android:exported="false" />
         <activity

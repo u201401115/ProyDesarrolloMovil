@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:background="@drawable/background_card"
+    android:layout_marginBottom="8dp">
+
+    <!-- Ícono de la transacción -->
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        />
+    <!-- android:src="@drawable/ic_toll" -->
+
+    <!-- Información de la transacción -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingStart="16dp">
+
+        <TextView
+            android:id="@+id/tollNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tol Dalam Kota"
+            android:textSize="16sp"
+            android:textColor="@color/textColorPrimary"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/licensePlateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B 2971 STJ"
+            android:textSize="14sp"
+            android:textColor="@color/textColorSecondary" />
+
+        <TextView
+            android:id="@+id/dateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 Apr 2021 10:23"
+            android:textSize="14sp"
+            android:textColor="@color/textColorSecondary" />
+    </LinearLayout>
+
+    <!-- Precio de la transacción -->
+    <TextView
+        android:id="@+id/priceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp 12.000"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+</LinearLayout>

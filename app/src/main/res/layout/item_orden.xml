@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:background="@drawable/background_card"
+    android:layout_marginBottom="8dp">
+
+    <!-- Columna Izquierda con ícono o color de estado -->
+    <View
+        android:layout_width="8dp"
+        android:layout_height="match_parent"
+        android:background="@color/statusGreen" />
+
+    <!-- Contenido de la orden -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginStart="8dp">
+
+        <TextView
+            android:id="@+id/dateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date Time : 29 December 2021"
+            android:textSize="14sp"
+            android:textColor="@color/textColorSecondary" />
+
+        <TextView
+            android:id="@+id/assetIdText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Asset ID : My Name"
+            android:textSize="14sp"
+            android:textColor="@color/textColorSecondary" />
+
+        <TextView
+            android:id="@+id/consigneeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Consignee : PT. Example 1"
+            android:textSize="14sp"
+            android:textColor="@color/textColorSecondary" />
+
+        <TextView
+            android:id="@+id/blNumberText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B/L Number : BL123456"
+            android:textSize="14sp"
+            android:textColor="@color/textColorSecondary" />
+
+        <!-- Botón de "View Detail" -->
+        <TextView
+            android:id="@+id/viewDetailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Detail"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

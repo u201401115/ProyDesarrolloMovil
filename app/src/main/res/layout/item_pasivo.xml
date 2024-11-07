@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/background_card"
+    android:padding="16dp"
+    android:layout_marginBottom="8dp"
+    android:elevation="4dp">
+
+    <TextView
+        android:id="@+id/tvAssetId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Asset ID: AD3535"
+        android:textSize="16sp"
+        android:textColor="@color/textColorPrimary" />
+
+    <TextView
+        android:id="@+id/tvAssetName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Asset Name: My Name"
+        android:textSize="16sp"
+        android:textColor="@color/textColorPrimary" />
+
+    <TextView
+        android:id="@+id/tvConsignee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Consignee: PT. Example 1"
+        android:textSize="16sp"
+        android:textColor="@color/textColorPrimary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Detail"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

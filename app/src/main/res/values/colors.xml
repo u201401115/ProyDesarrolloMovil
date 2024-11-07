@@ -8,4 +8,39 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="holo_orange_dark">#F57C00</color>
+    <!-- Colores principales -->
+    <color name="colorPrimary">#3F51B5</color> <!-- Azul para el encabezado -->
+    <color name="colorPrimaryDark">#303F9F</color> <!-- Azul oscuro para el estado -->
+    <color name="colorAccent">#FF4081</color> <!-- Rosa para resaltar (no se usa aquí, pero útil) -->
+
+    <!-- Colores para texto -->
+    <color name="textColorPrimary">#212121</color> <!-- Negro para texto principal -->
+    <color name="textColorSecondary">#757575</color> <!-- Gris oscuro para texto secundario -->
+    <color name="textColorWhite">#FFFFFF</color> <!-- Blanco para texto sobre fondos oscuros -->
+
+    <!-- Colores para el fondo -->
+    <color name="backgroundColor">#F5F5F5</color> <!-- Gris claro para fondo general -->
+    <color name="headerBackgroundColor">#3F51B5</color> <!-- Azul para el encabezado -->
+    <color name="orderBackgroundColor">#E3F2FD</color> <!-- Azul claro para fondo de orden -->
+
+    <!-- Colores de estado -->
+    <color name="statusInProgress">#FFA726</color> <!-- Naranja para estado "On Progress" -->
+    <color name="statusCompleted">#66BB6A</color> <!-- Verde para estado "Completed" -->
+    <color name="statusPending">#FF7043</color> <!-- Rojo para estado "Pending" -->
+
+    <!-- Colores para íconos y otros elementos -->
+    <color name="iconColor">#607D8B</color> <!-- Gris azulado para íconos -->
+    <color name="buttonColor">#3949AB</color> <!-- Azul oscuro para botones -->
+
+    <color name="cardBackground">#FFFFFF</color> <!-- Blanco para el fondo de las tarjetas -->
+
+    <!-- Colores de estado -->
+    <color name="statusActive">#4CAF50</color> <!-- Verde para estado "Active" -->
+      <color name="statusClosed">#D32F2F</color> <!-- Rojo para estado "Closed" -->
+    <color name="statusOccupied">#FF7043</color> <!-- Naranja oscuro para estado "Occupied" -->
+
+    <!-- Otros colores -->
+    <color name="dividerColor">#BDBDBD</color> <!-- Gris claro para divisores -->
+
+    <color name="statusGreen">#4CAF50</color> <!-- Verde para el punto activo -->
 </resources>
