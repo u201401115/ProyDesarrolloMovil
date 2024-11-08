@@ -27,7 +27,7 @@
             android:id="@+id/dateText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Date Time : 29 December 2021"
+            android:text="Fecha : 06 Nov 2024"
             android:textSize="14sp"
             android:textColor="@color/textColorSecondary" />
 
@@ -35,7 +35,7 @@
             android:id="@+id/assetIdText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Asset ID : My Name"
+            android:text="Bultos: 50 cajas"
             android:textSize="14sp"
             android:textColor="@color/textColorSecondary" />
 
@@ -43,7 +43,7 @@
             android:id="@+id/consigneeText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Consignee : PT. Example 1"
+            android:text="Consignatario: Empresa 1"
             android:textSize="14sp"
             android:textColor="@color/textColorSecondary" />
 
@@ -51,7 +51,7 @@
             android:id="@+id/blNumberText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="B/L Number : BL123456"
+            android:text="Producto ID : BL123456"
             android:textSize="14sp"
             android:textColor="@color/textColorSecondary" />
 
@@ -60,7 +60,7 @@
             android:id="@+id/viewDetailText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="View Detail"
+            android:text="Ver Detalles"
             android:textSize="14sp"
             android:textColor="@color/colorPrimary"
             android:layout_gravity="end"

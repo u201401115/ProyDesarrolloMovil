@@ -24,7 +24,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Orders"
+                    android:text="Ordenes"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     android:textColor="@android:color/white" />
@@ -43,7 +43,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="On Progress"
+                    android:text="En Progreso"
                     android:textSize="16sp"
                     android:textColor="@android:color/white"
                     android:gravity="center" />
@@ -52,7 +52,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Completed Orders"
+                    android:text="Ordenes Completadas"
                     android:textSize="16sp"
                     android:textColor="@android:color/white"
                     android:gravity="center" />
@@ -84,13 +84,6 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <!-- Ícono de la orden -->
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:contentDescription="Order Icon" />
-                    <!-- android:src="@drawable/ic_order" -->
-
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -100,28 +93,28 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Date / Time: 29 Dec 2021 12:05"
+                            android:text="Fecha / Hora: 05 Nov 2024 12:05"
                             android:textSize="14sp"
                             android:textColor="@color/textColorSecondary" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Order ID: #ORD5638"
+                            android:text="Orden ID: #ORD5638"
                             android:textSize="14sp"
                             android:textColor="@color/textColorSecondary" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Vehicle ID: B 1234 DJA"
+                            android:text="Vehiculo: AOC 123"
                             android:textSize="14sp"
                             android:textColor="@color/textColorSecondary" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Driver Name: Arief Budiman"
+                            android:text="Conductor: Conductor"
                             android:textSize="14sp"
                             android:textColor="@color/textColorSecondary" />
 
@@ -129,7 +122,7 @@
                             android:id="@+id/btnCompleteOrder"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Complete Order"
+                            android:text="FINALIZAR"
                             android:backgroundTint="@color/colorPrimary"
                             android:textColor="@android:color/white"
                             android:layout_marginTop="8dp" />
@@ -137,17 +130,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- Información de Activo (Tarjetas de Info de Activo) -->
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Asset Information"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:textColor="@color/textColorPrimary"
-                android:layout_marginBottom="8dp" />
-
-            <!-- Tarjeta de Información de Activo 1 -->
+            <!-- Información de Activo 1 -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -159,7 +142,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Asset Info"
+                    android:text="Información"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:textColor="@color/colorPrimary" />
@@ -173,35 +156,35 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Asset ID: A67495"
+                        android:text="Entrega ID: A67495"
                         android:textSize="14sp"
                         android:textColor="@color/textColorSecondary" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Asset Name: my name"
+                        android:text="Producto: Cajas"
                         android:textSize="14sp"
                         android:textColor="@color/textColorSecondary" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="B/L Number: BL123456"
+                        android:text="Producto ID: BL123456"
                         android:textSize="14sp"
                         android:textColor="@color/textColorSecondary" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Asset Destination: Warehouse 1 Bekasi Indonesia"
+                        android:text="Destino: Chorrillos - Lima"
                         android:textSize="14sp"
                         android:textColor="@color/textColorSecondary" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Consignee: PT. Example 1"
+                        android:text="Consignatario: Empresa 1"
                         android:textSize="14sp"
                         android:textColor="@color/textColorSecondary" />
                 </LinearLayout>
@@ -209,7 +192,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="On Progress"
+                    android:text="En progreso"
                     android:padding="4dp"
                     android:background="@drawable/status_background_in_progress"
                     android:textColor="@android:color/white"
@@ -217,7 +200,7 @@
                     android:layout_marginTop="10dp" />
             </androidx.cardview.widget.CardView>
 
-            <!-- Tarjeta de Información de Activo 2 (Completado) -->
+            <!-- Información de Activo 2 (Completado) -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -228,7 +211,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Asset Info"
+                    android:text="Información"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:textColor="@color/colorPrimary" />
@@ -242,35 +225,35 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Asset ID: A67495"
+                        android:text="Entrega ID: A67495"
                         android:textSize="14sp"
                         android:textColor="@color/textColorSecondary" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Asset Name: my name"
+                        android:text="Producto: Cajas"
                         android:textSize="14sp"
                         android:textColor="@color/textColorSecondary" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="B/L Number: BL123456"
+                        android:text="Producto ID: BL123456"
                         android:textSize="14sp"
                         android:textColor="@color/textColorSecondary" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Asset Destination: Warehouse 1 Bekasi Indonesia"
+                        android:text="Destino: Lurín - Lima"
                         android:textSize="14sp"
                         android:textColor="@color/textColorSecondary" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Consignee: PT. Example 1"
+                        android:text="Consignatario: Empresa 1"
                         android:textSize="14sp"
                         android:textColor="@color/textColorSecondary" />
                 </LinearLayout>
@@ -278,7 +261,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Completed"
+                    android:text="Completedo"
                     android:padding="4dp"
                     android:background="@drawable/status_background_completed"
                     android:textColor="@android:color/white"

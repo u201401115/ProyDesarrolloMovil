@@ -18,7 +18,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Orders"
+                android:text="Ordenes"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:textColor="@android:color/white"
@@ -36,7 +36,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="On Progress"
+                    android:text="En Progreso"
                     android:textSize="16sp"
                     android:textColor="@android:color/white"
                     android:gravity="center" />
@@ -45,28 +45,30 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Completed Orders"
+                    android:text="Ordenes Completadas"
                     android:textSize="16sp"
                     android:textColor="@android:color/white"
                     android:gravity="center" />
             </LinearLayout>
-            <Button
-                android:id="@+id/btnContinue"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Continuar"
-                android:layout_marginTop="16dp"
-                android:backgroundTint="@color/colorPrimary"
-                android:textColor="@android:color/white"
-                android:textStyle="bold"
-                android:padding="12dp" />
+
         </LinearLayout>
 
         <!-- RecyclerView para la lista de órdenes -->
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerViewOrders"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="16dp" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewOrders"
+        android:layout_width="match_parent"
+        android:layout_height="255dp"
+        android:layout_marginTop="16dp" />
 
-    </LinearLayout>
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:padding="12dp"
+        android:text="Continuar"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+</LinearLayout>

@@ -33,7 +33,7 @@ android:padding="16dp">
             android:id="@+id/tvWelcome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hola, Diego Guevara"
+            android:text="Hola, Conductor"
             android:textSize="16sp"
             android:textColor="@android:color/white" />
 
@@ -62,7 +62,7 @@ android:padding="16dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Veheiculo" />
+                android:text="Vehículo" />
         </LinearLayout>
 
         <LinearLayout
@@ -134,7 +134,7 @@ android:padding="16dp">
         android:id="@+id/tvVehicleInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="B 2791 STJ\nCamión\n29 Dec 2021 10:23"
+        android:text="AOC 123\nCamión\n04 Nov 2024 10:23"
         android:padding="8dp"
         android:layout_marginBottom="16dp" />
 
@@ -157,12 +157,12 @@ android:padding="16dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Fecha / Hora: 29 Dec 2021 12:05" />
+            android:text="Fecha / Hora: 04 Nov 2024 12:05" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ordem ID: #ORD5638" />
+            android:text="Orden ID: #ORD5638" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -171,14 +171,6 @@ android:padding="16dp">
             android:textColor="@android:color/holo_orange_dark" />
     </LinearLayout>
 
-    <!-- Last Orders (if needed) -->
-    <TextView
-        android:id="@+id/tvLastOrdersTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ultima Ordenes"
-        android:textSize="18sp"
-        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btnContinue"

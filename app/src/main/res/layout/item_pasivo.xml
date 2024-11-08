@@ -13,7 +13,7 @@
         android:id="@+id/tvAssetId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Asset ID: AD3535"
+        android:text="Orden ID: AD3535"
         android:textSize="16sp"
         android:textColor="@color/textColorPrimary" />
 
@@ -21,7 +21,7 @@
         android:id="@+id/tvAssetName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Asset Name: My Name"
+        android:text="Destino: Chorrillos - Lima"
         android:textSize="16sp"
         android:textColor="@color/textColorPrimary" />
 
@@ -29,7 +29,7 @@
         android:id="@+id/tvConsignee"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Consignee: PT. Example 1"
+        android:text="Consignatario: Empresa 1"
         android:textSize="16sp"
         android:textColor="@color/textColorPrimary" />
 
@@ -43,7 +43,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="View Detail"
+            android:text="Ver Detalles"
             android:textColor="@color/colorPrimary"
             android:textStyle="bold" />
     </LinearLayout>

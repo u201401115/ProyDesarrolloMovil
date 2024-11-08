@@ -23,9 +23,9 @@ class PasivosActivity : AppCompatActivity() {
 
         // Lista de ejemplo de activos
         val assetList = listOf(
-            Pasivo("AD3535", "My Name", "PT. Example 1"),
-            Pasivo("AD3536", "My Name", "PT. Example 1"),
-            Pasivo("AD3537", "My Name", "PT. Example 1")
+            Pasivo("AD3535", "Chorrillos - Lima", "Empresa 1"),
+            Pasivo("AD3536", "Lurín - Lima", "Empresa 2"),
+            Pasivo("AD3537", "Lince - Lima", "Empresa 3")
         )
 
         // Configuración del RecyclerView

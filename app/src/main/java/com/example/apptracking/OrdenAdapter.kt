@@ -14,10 +14,10 @@ class OrderAdapter(private val orderList: List<Orden>) : RecyclerView.Adapter<Or
 
     override fun onBindViewHolder(holder: OrderViewHolder, position: Int) {
         val order = orderList[position]
-        holder.dateText.text = "Date Time : ${order.date}"
-        holder.assetIdText.text = "Asset ID : ${order.assetId}"
-        holder.consigneeText.text = "Consignee : ${order.consignee}"
-        holder.blNumberText.text = "B/L Number : ${order.blNumber}"
+        holder.dateText.text = "Fecha : ${order.date}"
+        holder.assetIdText.text = "Orden ID : ${order.assetId}"
+        holder.consigneeText.text = "Consignatario : ${order.consignee}"
+        holder.blNumberText.text = "Producto ID : ${order.blNumber}"
     }
 
     override fun getItemCount(): Int = orderList.size

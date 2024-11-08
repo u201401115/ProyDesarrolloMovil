@@ -23,7 +23,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="MLFF E-TOLL"
+                    android:text="SALIDAS"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     android:textColor="@android:color/white" />
@@ -41,7 +41,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Last Transaction"
+                    android:text="Ultima Salida"
                     android:textSize="16sp"
                     android:textColor="@android:color/white"
                     android:gravity="center" />
@@ -50,7 +50,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="LOG Transaction"
+                    android:text=""
                     android:textSize="16sp"
                     android:textColor="@android:color/white"
                     android:gravity="center" />
@@ -84,7 +84,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="B 2791 STJ"
+                            android:text="AOC 123"
                             android:textSize="16sp"
                             android:textStyle="bold"
                             android:textColor="@color/textColorPrimary" />
@@ -92,21 +92,21 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Tol Dalam Kota"
+                            android:text="Volvo"
                             android:textSize="14sp"
                             android:textColor="@color/textColorSecondary" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="10 Apr 2021 10:23"
+                            android:text="05 Nov 2024 10:23"
                             android:textSize="14sp"
                             android:textColor="@color/textColorSecondary" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="OBU ADH4567"
+                            android:text=""
                             android:textSize="14sp"
                             android:textColor="@color/textColorSecondary" />
                     </LinearLayout>
@@ -117,7 +117,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Detail Perjalanan"
+                android:text="Detalles del viaje"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:textColor="@color/textColorPrimary"
@@ -134,7 +134,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Jarak Tempuh 12,4 km  •  Durasi 14 menit"
+                    android:text="Santiago de Surco - Lima"
                     android:textSize="14sp"
                     android:textColor="@color/textColorPrimary"
                     android:textStyle="bold" />
@@ -156,7 +156,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:paddingStart="8dp"
-                        android:text="GT Semanggi 2"
+                        android:text="Almacén Lima"
                         android:textSize="14sp"
                         android:textColor="@color/textColorSecondary" />
 
@@ -185,7 +185,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:paddingStart="8dp"
-                        android:text="GT Halim 2"
+                        android:text="Inicio de Ruta"
                         android:textSize="14sp"
                         android:textColor="@color/textColorSecondary" />
 
@@ -202,7 +202,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Detail Pembayaran"
+                android:text="Detalles de Comprobante"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:textColor="@color/textColorPrimary"
@@ -228,7 +228,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Total Pembayaran"
+                android:text="Total Documentos"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:textColor="@color/colorPrimary" />
@@ -236,7 +236,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Rp 10.000"
+                android:text="10 Guias"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:textColor="@color/colorPrimary" />
@@ -246,7 +246,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Fee"
+        android:text=""
         android:textSize="14sp"
         android:textColor="@color/textColorSecondary"
         android:layout_marginTop="40dp" />
@@ -254,7 +254,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Rp 0"
+        android:text=""
         android:textSize="14sp"
         android:textColor="@color/textColorPrimary"
         android:gravity="end"
@@ -271,7 +271,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Metode pembayaran"
+                    android:text=""
                     android:textColor="@color/textColorSecondary"
                     android:textSize="14sp"
                     android:layout_marginTop="60dp"/>
@@ -282,7 +282,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="ID Transaction    ret48753uy4t786"
+                android:text="ID Salida    ret48753uy4t786"
                 android:textSize="14sp"
                 android:textColor="@color/textColorSecondary"
                 android:background="#F5F5F5"

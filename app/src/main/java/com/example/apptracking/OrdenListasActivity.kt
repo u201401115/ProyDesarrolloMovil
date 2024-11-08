@@ -22,9 +22,9 @@ class OrdenListasActivity : AppCompatActivity() {
         }
 
         val orderList = listOf(
-            Orden("29 December 2021", "My Name", "PT. Example 1", "BL123456"),
-            Orden("29 December 2021", "My Name", "PT. Example 1", "BL123456"),
-            Orden("29 December 2021", "My Name", "PT. Example 1", "BL123456")
+            Orden("01 Nov 2024", "Según Guía", "Cliente ABC", "F01-0001"),
+            Orden("02 Nov 2024", "Según Guía", "Cliente XYZ", "F01-0002"),
+            Orden("03 Nov 2024", "Según Guía", "Cliente 123", "F01-0003")
         )
 
         // Configuración del RecyclerView

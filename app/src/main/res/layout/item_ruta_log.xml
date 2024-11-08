@@ -27,7 +27,7 @@
             android:id="@+id/tollNameText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tol Dalam Kota"
+            android:text="Empresa 1"
             android:textSize="16sp"
             android:textColor="@color/textColorPrimary"
             android:textStyle="bold" />
@@ -36,7 +36,7 @@
             android:id="@+id/licensePlateText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="B 2971 STJ"
+            android:text="AOC 123"
             android:textSize="14sp"
             android:textColor="@color/textColorSecondary" />
 
@@ -44,7 +44,7 @@
             android:id="@+id/dateText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="10 Apr 2021 10:23"
+            android:text="06 Nov 2024 10:00"
             android:textSize="14sp"
             android:textColor="@color/textColorSecondary" />
     </LinearLayout>
@@ -54,7 +54,7 @@
         android:id="@+id/priceText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Rp 12.000"
+        android:text="50 Cajas"
         android:textSize="16sp"
         android:textColor="@color/colorPrimary"
         android:textStyle="bold" />

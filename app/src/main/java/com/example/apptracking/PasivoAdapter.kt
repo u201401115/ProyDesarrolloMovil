@@ -15,9 +15,9 @@ class AssetAdapter(private val assetList: List<Pasivo>) : RecyclerView.Adapter<A
 
     override fun onBindViewHolder(holder: AssetViewHolder, position: Int) {
         val asset = assetList[position]
-        holder.tvAssetId.text = "Asset ID: ${asset.assetId}"
-        holder.tvAssetName.text = "Asset Name: ${asset.assetName}"
-        holder.tvConsignee.text = "Consignee: ${asset.consignee}"
+        holder.tvAssetId.text = "Orden ID: ${asset.assetId}"
+        holder.tvAssetName.text = "Destino: ${asset.assetName}"
+        holder.tvConsignee.text = "Consignatario: ${asset.consignee}"
     }
 
     override fun getItemCount(): Int = assetList.size
