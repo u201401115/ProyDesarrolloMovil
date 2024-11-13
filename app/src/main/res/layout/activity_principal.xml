@@ -3,6 +3,7 @@
 xmlns:android="http://schemas.android.com/apk/res/android"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
+android:background="@drawable/home6"
 android:padding="16dp">
 
 <LinearLayout
@@ -12,39 +13,36 @@ android:padding="16dp">
     android:orientation="vertical">
 
     <!-- Header -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@color/colorPrimary"
-        android:padding="16dp"
-        android:layout_marginBottom="16dp">
-
-        <TextView
-            android:id="@+id/tvTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="KLO"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:textColor="@android:color/white" />
-
-        <TextView
-            android:id="@+id/tvWelcome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hola, Conductor"
-            android:textSize="16sp"
-            android:textColor="@android:color/white" />
-
-    </LinearLayout>
 
     <!-- Menu Buttons (Vehicle, Asset, E-Toll, Order) -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        android:padding="1dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/klo1" />
+
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Hola, Conductor"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="50dp"
         android:gravity="center">
 
         <LinearLayout
@@ -56,12 +54,15 @@ android:padding="16dp">
 
             <ImageView
                 android:layout_width="40dp"
-                android:layout_height="40dp" />
+                android:layout_height="40dp"
+                android:background="@drawable/camion1"/>
+
                 <!--android:src="@drawable/ic_vehicle"-->
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
                 android:text="Vehículo" />
         </LinearLayout>
 
@@ -69,13 +70,13 @@ android:padding="16dp">
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp" />
-                <!--android:src="@drawable/ic_asset"-->
+            <!--android:src="@drawable/ic_asset"-->
 
             <TextView
                 android:layout_width="wrap_content"
