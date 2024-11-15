@@ -50,7 +50,7 @@
                 android:layout_width="352dp"
                 android:layout_height="71dp"
                 android:text="TextView"
-                android:textColor="#FFFFF"
+                android:textColor="@color/white"
                 android:background="@drawable/btnagrupacion"
                 tools:layout_editor_absoluteX="26dp"
                 tools:layout_editor_absoluteY="146dp"
