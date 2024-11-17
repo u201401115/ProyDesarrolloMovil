@@ -29,11 +29,12 @@ class MainActivity : AppCompatActivity() {
 
             val dao = UsuarioDAO(baseContext)
 
+        btn.setOnClickListener {
             val username = usernameEditText.text.toString()
             val password = passwordEditText.text.toString()
 
             if (dao.validarUsuario(username, password)) {
-                val intent = Intent(this, HomeActivity::class.java)
+                val intent = Intent(this, PrincipalActivity::class.java)
                 startActivity(intent)
                 finish()
             } else {
