@@ -1,70 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/home15"
+    android:background="@drawable/home9"
     android:orientation="vertical"
     tools:context=".HomeActivity">
 
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginEnd="24dp"
-        android:background="@drawable/camion1"
-        android:text="."
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.4" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:background="@drawable/camion1"
-        android:text="."
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.601"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="346dp" />
-
-    <LinearLayout
-
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="130dp">
+        android:layout_height="match_parent">
 
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="332dp"
+            android:layout_height="90dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.173"
+            tools:ignore="MissingConstraints">
 
-        <TextView
-                android:id="@+id/textView"
-                android:layout_width="352dp"
-                android:layout_height="71dp"
-                android:text="TextView"
-                android:textColor="#FFFFF"
-                android:background="@drawable/btnagrupacion"
-                tools:layout_editor_absoluteX="26dp"
-                tools:layout_editor_absoluteY="146dp"
+            <Button
+                android:id="@+id/btnVehiculo"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="0dp"
+                android:background="@drawable/carro"
+                android:text="."
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="MissingConstraints" />
 
-        <Button
-            android:id="@+id/buttonY"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:background="@drawable/camion1"
-            android:text="." />
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/btnPedidos"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/caja"
+                android:text="."
+                android:textColor="#FFFFFF"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/btnRutas"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/pista"
+                android:text="."
+                android:textColor="#FFFFFF"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/btnOrdenes"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="13dp"
+                android:background="@drawable/reporte"
+                android:text="."
+                android:textColor="#FFFFFF"
+                tools:ignore="MissingConstraints" />
+
+            <FrameLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            </FrameLayout>
+
+        </LinearLayout>
 
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:menu="@menu/menu_inf" />
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
