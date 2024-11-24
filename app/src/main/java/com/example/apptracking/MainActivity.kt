@@ -27,20 +27,20 @@ class MainActivity : AppCompatActivity() {
 
         loginButton.setOnClickListener {
 
-            val dao = UsuarioDAO(baseContext)
+                val dao = UsuarioDAO(baseContext)
+                val username = usernameEditText.text.toString()
+                val password = passwordEditText.text.toString()
 
-        btn.setOnClickListener {
-            val username = usernameEditText.text.toString()
-            val password = passwordEditText.text.toString()
-
-            if (dao.validarUsuario(username, password)) {
-                val intent = Intent(this, PrincipalActivity::class.java)
-                startActivity(intent)
-                finish()
-            } else {
-                Toast.makeText(this, "Usuario o contraseña incorrectos", Toast.LENGTH_SHORT).show()
+                if (dao.validarUsuario(username, password)) {
+                    val intent = Intent(this, PrincipalActivity::class.java)
+                    startActivity(intent)
+                    finish()
+                } else {
+                    Toast.makeText(this, "Usuario o contraseña incorrectos", Toast.LENGTH_SHORT)
+                        .show()
+                }
             }
+
         }
 
-    }
 }

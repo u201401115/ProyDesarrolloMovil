@@ -1,10 +1,15 @@
 package com.example.apptracking
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
 
@@ -21,6 +26,7 @@ class OrdenesActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+
         }
         var viewPager :ViewPager = findViewById(R.id.viewPager) as ViewPager
         var tabLayout :TabLayout = findViewById(R.id.tabLayout) as TabLayout
@@ -31,6 +37,13 @@ class OrdenesActivity : AppCompatActivity() {
 
         viewPager.adapter = fragmentAdapter
         tabLayout.setupWithViewPager(viewPager)
+
+        val btn: Button = findViewById(R.id.btnretro)
+
+        btn.setOnClickListener {
+            val intent = Intent(this, PrincipalActivity::class.java)
+            startActivity(intent)
+        }
 
 
 
