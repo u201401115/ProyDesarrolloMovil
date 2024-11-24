@@ -26,8 +26,9 @@ class MainActivity : AppCompatActivity() {
         val loginButton = findViewById<Button>(R.id.loginButton)
 
         loginButton.setOnClickListener {
+            val dao = UsuarioDAO(baseContext)
 
-                val dao = UsuarioDAO(baseContext)
+            loginButton.setOnClickListener {
                 val username = usernameEditText.text.toString()
                 val password = passwordEditText.text.toString()
 
@@ -42,5 +43,5 @@ class MainActivity : AppCompatActivity() {
             }
 
         }
-
+    }
 }
