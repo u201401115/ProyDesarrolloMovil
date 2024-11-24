@@ -26,7 +26,6 @@ class MainActivity : AppCompatActivity() {
         val loginButton = findViewById<Button>(R.id.loginButton)
 
         loginButton.setOnClickListener {
-
             val dao = UsuarioDAO(baseContext)
 
             loginButton.setOnClickListener {
@@ -42,6 +41,7 @@ class MainActivity : AppCompatActivity() {
                         .show()
                 }
             }
+
         }
     }
 }

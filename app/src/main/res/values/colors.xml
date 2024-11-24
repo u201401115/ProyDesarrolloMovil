@@ -43,4 +43,5 @@
     <color name="dividerColor">#BDBDBD</color> <!-- Gris claro para divisores -->
 
     <color name="statusGreen">#4CAF50</color> <!-- Verde para el punto activo -->
+    <color name="undercolor">#B1B1B1</color> <!-- Verde para el punto activo -->
 </resources>
