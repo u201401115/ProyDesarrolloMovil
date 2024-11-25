@@ -83,28 +83,5 @@ android:background="@color/backgroundColor">
             android:layout_marginStart="8dp" />
     </LinearLayout>
 
-    <!-- Lista de Ubicaciones (Timeline) -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="16dp">
-
-
-
-        <Button
-            android:id="@+id/btnContinue"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Continuar"
-            android:layout_marginTop="16dp"
-            android:backgroundTint="@color/colorPrimary"
-            android:textColor="@android:color/white"
-            android:textStyle="bold"
-            android:padding="12dp" />
-
-        <!-- Repetir el bloque anterior para otras ubicaciones -->
-    </LinearLayout>
-
 </LinearLayout>
 </ScrollView>
