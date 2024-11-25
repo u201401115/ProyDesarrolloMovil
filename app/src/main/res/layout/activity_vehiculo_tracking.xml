@@ -90,73 +90,7 @@ android:background="@color/backgroundColor">
         android:orientation="vertical"
         android:layout_marginTop="16dp">
 
-        <!-- Item de Tracking 1 -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingBottom="16dp">
 
-            <!-- Columna Izquierda (Punto y Línea) -->
-            <LinearLayout
-                android:layout_width="40dp"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center">
-
-                <!-- Punto Verde para la primera ubicación -->
-                <ImageView
-                    android:layout_width="12dp"
-                    android:layout_height="12dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/point_green" />
-
-                <!-- Línea Punteada -->
-                <ImageView
-                    android:layout_width="2dp"
-                    android:layout_height="40dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/line_dotted" />
-            </LinearLayout>
-
-            <!-- Columna Derecha (Detalles del Tracking) -->
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Almacén 1"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:textColor="@color/colorPrimary" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Lurín - Lima"
-                    android:textSize="14sp"
-                    android:textColor="@color/textColorSecondary" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="06 Nov 2024 18:00:00"
-                    android:textSize="14sp"
-                    android:textColor="@color/textColorSecondary" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Ver Mapa"
-                    android:textColor="@color/colorPrimary"
-                    android:textStyle="bold"
-                    android:layout_marginTop="4dp" />
-            </LinearLayout>
-        </LinearLayout>
 
         <Button
             android:id="@+id/btnContinue"
