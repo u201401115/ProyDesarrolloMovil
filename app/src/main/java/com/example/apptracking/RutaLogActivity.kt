@@ -19,7 +19,6 @@ class RutaLogActivity : AppCompatActivity() {
             insets
         }
 
-        // Lista de ejemplo de transacciones
         val transactionList = listOf(
             RutaLog("Tol Dalam Kota", "B 2971 STJ", "10 Apr 2021 10:23", "Rp 12.000"),
             RutaLog("Tol Jagorawi", "B 2971 STJ", "06 Apr 2021 19:23", "Rp 12.000"),
@@ -28,7 +27,6 @@ class RutaLogActivity : AppCompatActivity() {
             RutaLog("Tol Dalam Kota", "B 2971 STJ", "02 Apr 2021 19:23", "Rp 12.000")
         )
 
-        // Configuración del RecyclerView
         val recyclerView: RecyclerView = findViewById(R.id.recyclerViewTransactions)
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = RutaLogAdapter(transactionList)

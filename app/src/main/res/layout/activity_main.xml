@@ -1,52 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:background="@android:color/black"
-    android:padding="16dp"
-    android:id="@+id/main">
+    android:background="@drawable/fondo4"
+    android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/logoImageView"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:src="@drawable/klo"
-        android:layout_gravity="center"
-        android:contentDescription="Logo"/>
+    <LinearLayout
 
-    <EditText
-        android:id="@+id/usernameEditText"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Usuario"
-        android:textColor="@android:color/white"
-        android:textColorHint="@android:color/darker_gray"
-        android:background="@android:color/white"
-        android:padding="10dp"
-        android:layout_marginTop="20dp"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="60dp">
 
-    <EditText
-        android:id="@+id/passwordEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Contraseña"
-        android:inputType="textPassword"
-        android:textColor="@android:color/white"
-        android:textColorHint="@android:color/darker_gray"
-        android:background="@android:color/white"
-        android:padding="10dp"
-        android:layout_marginTop="10dp"/>
+    </LinearLayout>
 
-    <Button
-        android:id="@+id/loginButton"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Ingresar"
-        android:background="@android:color/holo_orange_dark"
-        android:textColor="@android:color/white"
-        android:layout_marginTop="20dp"
-        android:padding="10dp"/>
-</LinearLayout>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bienvenido!"
+            android:layout_marginLeft="70dp"
+            android:textSize="35sp"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rounded_corner"
+            android:drawableLeft="@drawable/usuario"
+            android:hint="Username"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_corner"
+            android:drawableLeft="@drawable/passworda"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn1"
+            android:padding="10dp"
+            android:text="Login"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

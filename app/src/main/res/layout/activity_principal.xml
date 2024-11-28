@@ -1,188 +1,234 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-xmlns:android="http://schemas.android.com/apk/res/android"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:padding="16dp">
-
-<LinearLayout
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/main"
-    android:orientation="vertical">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/homes"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main"
+        android:orientation="vertical">
 
     <!-- Header -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@color/colorPrimary"
-        android:padding="16dp"
-        android:layout_marginBottom="16dp">
-
-        <TextView
-            android:id="@+id/tvTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="KLO"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:textColor="@android:color/white" />
-
-        <TextView
-            android:id="@+id/tvWelcome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hola, Conductor"
-            android:textSize="16sp"
-            android:textColor="@android:color/white" />
-
-    </LinearLayout>
 
     <!-- Menu Buttons (Vehicle, Asset, E-Toll, Order) -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginBottom="16dp"
-        android:gravity="center">
-
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
             android:orientation="vertical"
-            android:gravity="center">
+            android:padding="1dp">
 
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp" />
-                <!--android:src="@drawable/ic_vehicle"-->
+                android:layout_width="96dp"
+                android:layout_height="87dp"
+                android:src="@drawable/klo1"
+                />
 
             <TextView
+                android:id="@+id/tvWelcome"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Vehículo" />
+                android:layout_marginLeft="5dp"
+                android:text="Hola, Conductor"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="0dp"
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="30dp"
             android:gravity="center">
 
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnVehiculo"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/carro"
+                    android:text="."
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                    <!--android:src="@drawable/ic_vehicle"-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vehículo"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnPedidos"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/caja"
+                    android:text="."
+                    android:textColor="#FFFFFF" />
                 <!--android:src="@drawable/ic_asset"-->
 
-            <TextView
-                android:layout_width="wrap_content"
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pedidos"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Activos" />
-        </LinearLayout>
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:gravity="center">
+                <Button
+                    android:id="@+id/btnRutas"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pista"
+                    android:text="."
+                    android:textColor="#FFFFFF" />
+                    <!--android:src="@drawable/ic_etoll"-->
 
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp" />
-                <!--android:src="@drawable/ic_etoll"-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rutas"
+                    android:textColor="#000000"/>
+            </LinearLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Ruta" />
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnOrdenes"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/reporte"
+                    android:text="."
+                    android:textColor="#FFFFFF" />
+                    <!--android:src="@drawable/ic_order"-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ordenes"
+                    android:textColor="#000000" />
+            </LinearLayout>
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:gravity="center">
-
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"  />
-                <!--android:src="@drawable/ic_order"-->
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Orden" />
-        </LinearLayout>
-    </LinearLayout>
 
     <!-- Vehicle Info -->
-    <TextView
-        android:id="@+id/tvVehicleInfoTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Vehiculo Información"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="8dp" />
-
-    <TextView
-        android:id="@+id/tvVehicleInfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="AOC 123\nCamión\n04 Nov 2024 10:23"
-        android:padding="8dp"
-        android:layout_marginBottom="16dp" />
-
-    <!-- Incoming Order -->
-    <TextView
-        android:id="@+id/tvIncomingOrderTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ruta en proceso"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="8dp" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <!--android:background="@drawable/order_background"-->
-
         <TextView
+            android:id="@+id/tvVehicleInfoTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Fecha / Hora: 04 Nov 2024 12:05" />
+            android:text="Información Vehiculo"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Incoming Order -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="61dp"
+                android:layout_height="52dp"
+                android:src="@drawable/carroinfo" />
+
+            <TextView
+                android:id="@+id/tvVehicleInfo"
+                android:layout_width="131dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="16dp"
+                android:padding="5dp"
+                android:text="AOC 123\nCamión" />
+
+            <TextView
+                android:id="@+id/tvVehicleDate"
+                android:layout_width="159dp"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"
+                android:text="04 Nov 2024 10:23" />
+
+        </LinearLayout>
+
 
         <TextView
+            android:id="@+id/tvIncomingOrderTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Orden ID: #ORD5638" />
+            android:text="Estado de Ordenes"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Estados: en Proceso"
-            android:textColor="@android:color/holo_orange_dark" />
+            android:layout_marginTop="0dp"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="100dp">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNav"
+                android:background="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                app:menu="@menu/menu_inf"
+                />
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
     </LinearLayout>
-
-
-    <Button
-        android:id="@+id/btnContinue"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Continuar"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="@color/colorPrimary"
-        android:textColor="@android:color/white"
-        android:textStyle="bold"
-        android:padding="12dp" />
-
-
-</LinearLayout>
 </ScrollView>
