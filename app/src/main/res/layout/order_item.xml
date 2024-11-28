@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="44dp"
+            android:layout_height="87dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/reportees" />
+
+        <TextView
+            android:id="@+id/item_fecha"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/item_image"
+            android:layout_toRightOf="@+id/item_image"
+            android:padding="5dp"
+            android:text="Fecha / Hora:"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/item_id"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_fecha"
+            android:layout_toEndOf="@+id/item_image"
+            android:layout_toRightOf="@+id/item_image"
+            android:padding="5dp"
+            android:text="Orden ID:"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/item_estado"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_id"
+            android:layout_toEndOf="@+id/item_image"
+            android:layout_toRightOf="@+id/item_image"
+            android:padding="5dp"
+            android:text="Estado:"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/item_Rfecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/item_fecha"
+            android:layout_toRightOf="@+id/item_fecha"
+            android:padding="5dp"
+            android:text="01 Nov 2024 12:05"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/item_Rid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_Rfecha"
+            android:layout_toEndOf="@+id/item_id"
+            android:layout_toRightOf="@+id/item_id"
+            android:padding="5dp"
+            android:text="#ORD5638"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/item_Restado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_Rid"
+            android:layout_toEndOf="@+id/item_estado"
+            android:layout_toRightOf="@+id/item_estado"
+            android:padding="5dp"
+            android:text="En Progreso"
+            android:textColor="#FFA500"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

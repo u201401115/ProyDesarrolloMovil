@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
                     startActivity(intent)
                     finish()
                 } else {
-                    Toast.makeText(this, "Usuario o contraseña incorrectos", Toast.LENGTH_SHORT)
+                    Toast.makeText(this, "Usuario o contraseña incorrectos" , Toast.LENGTH_SHORT)
                         .show()
                 }
             }

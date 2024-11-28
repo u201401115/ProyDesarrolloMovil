@@ -28,11 +28,10 @@ class DetalleActivity : AppCompatActivity() {
             insets
         }
 
-        // Configurar el RecyclerView
         val recyclerView: RecyclerView = findViewById(R.id.recyclerViewPedidos)
         recyclerView.layoutManager = LinearLayoutManager(this)
 
-        // Crear una lista de ejemplo de pedidos
+
         val pedidos = listOf(
             Pedido("Pedido 0038", "Pendiente"),
             Pedido("Pedido 0039", "Pendiente"),
@@ -43,7 +42,6 @@ class DetalleActivity : AppCompatActivity() {
             Pedido("Pedido 0044", "En Proceso")
         )
 
-        // Configurar el adaptador con la lista de pedidos
         recyclerView.adapter = PedidosAdapter(pedidos)
     }
 }

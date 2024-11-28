@@ -21,7 +21,7 @@ class PasivoTrackingActivity : AppCompatActivity() {
 
         val btnContinue: Button = findViewById(R.id.btnContinue)
         btnContinue.setOnClickListener {
-            // Intent para abrir la siguiente actividad
+
             val intent = Intent(this, VehiculoTrackingActivity::class.java)
             startActivity(intent)
         }
